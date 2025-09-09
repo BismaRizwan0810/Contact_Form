@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form </title>
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    <!---ye div poory page kai layout ko control krey gi-->
+
+    <div class="page">
+        <div class ="card">
+            <header class="card-head">
+                <h1>CONTACT US </h1>
+                <h2>Have questions or ideas? We’re just one message away! </h2>
+            </header>
+            <form id="contact-form" class="form" nonvalidate>
+                
+                <div class="field" data-field>
+                    <label for="name">FULL NAME</label>
+                    <input id="name" type="text"placeholder="Sabira"requiredminlength="2"/>
+                    <small class="error"aria-live="polite"></small>
+                </div>
+                
+                <div class="field" data-field>
+                    <label for="email">EMAIL </label>
+                    <input id="email" type="text" placeholder="bismarizwan08@gmail.com"requiredminlength/>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+                <div class="subject" data-field>
+                    <label for="subject">SUBJECT</label>
+                    <input id="subject" type="text"placeholder="What's this is about"requiredminlength=3/>
+                    <small class="error" aria-live="polite"></small>
+                </div>
+                <div class="message"data-field>
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" type="text" rows="5" placeholder="Write your own message"requiredminlength=10></textarea>
+                </div>
+                <button class="btn" id= "submit-btn" type="submit"aria-live="Polite">SEND MESSAGE</button>
+             <p class="sucess" id="sucessnote">
+                THANKS ! YOUR MESSAGE HAS BEEN SENT 
+             </p>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"defer></script>
+</body>
+</html>
